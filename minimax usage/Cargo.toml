@@ -1,0 +1,43 @@
+[package]
+name = "token_usage"
+version = "1.0.0"
+edition = "2021"
+authors = ["token usage contributors"]
+description = "Windows tray app that monitors AI provider usage (MiniMax, DeepSeek, ...)"
+license = "MIT"
+repository = "https://github.com/yourusername/token_usage"
+readme = "README.md"
+keywords = ["tray", "usage", "monitoring", "ai", "windows"]
+categories = ["utilities"]
+
+[dependencies]
+# Raw Win32 bindings (kept available for direct API calls)
+windows = { version = "0.58", features = [
+    "Win32_Foundation",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_UI_Shell",
+    "Win32_UI_Controls",
+    "Win32_Graphics_Gdi",
+    "Win32_System_Registry",
+    "Win32_System_Threading",
+    "Win32_System_LibraryLoader",
+] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+ureq = { version = "2", features = ["json"] }
+anyhow = "1"
+dirs = "5"
+# Cross-platform tray icon crate (Windows/macOS/Linux)
+tray-icon = "0.19"
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
+incremental = false
+
+[[bin]]
+name = "token_usage"
+path = "src/main.rs"
