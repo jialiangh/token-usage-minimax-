@@ -21,11 +21,11 @@ A lightweight Windows tray app that monitors the usage of multiple AI providers
 
 **Settings dialog** (dark Fluent-style, with live API test):
 
-![Settings window](/minimax usage/screenshots/settings-window.png)
+![Settings window](minimax usage/screenshots/settings-window.png)
 
 **Tray tooltip** in the Windows 11 system tray:
 
-![Tray tooltip](/minimax usage/screenshots/tray-tooltip.png)
+![Tray tooltip](minimax usage/screenshots/tray-tooltip.png)
 
 ### Downloads
 
@@ -135,11 +135,11 @@ cargo build --release
 
 **设置对话框**(深色 Fluent 风格,带真实 API 测试):
 
-![设置窗口](/minimax usage/screenshots/settings-window.png)
+![设置窗口](minimax usage/screenshots/settings-window.png)
 
 **Windows 11 系统托盘 tooltip**:
 
-![托盘 tooltip](/minimax usage/screenshots/tray-tooltip.png)
+![托盘 tooltip](minimax usage/screenshots/tray-tooltip.png)
 
 ### 下载
 
