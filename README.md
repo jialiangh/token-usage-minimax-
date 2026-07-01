@@ -21,7 +21,7 @@ A lightweight Windows tray app that monitors the usage of multiple AI providers
 
 **Settings dialog** (dark Fluent-style, with live API test):
 
-![Settings window](minimaxusage/screenshots/settings-window.png)
+![Settings window](minimax%20usage/screenshots/settings-window.png)
 
 **Tray tooltip** in the Windows 11 system tray:
 
