@@ -8,7 +8,6 @@
 [![Platform: Windows 10/11](https://img.shields.io/badge/platform-Windows%2010%2F11-blue?style=flat-square)](#-quick-start)
 [![Built with Rust](https://img.shields.io/badge/built%20with-Rust-orange?style=flat-square)](https://www.rust-lang.org/)
 
-[English](#-english) · [中文](#-中文)
 
 ---
 
